@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: deploye-app-hello-k8s
+  name: deploy-app-hello-k8s
 spec:
   destination:
     name: ''

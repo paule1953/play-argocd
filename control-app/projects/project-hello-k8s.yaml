@@ -1,0 +1,12 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: hello-k8s
+  namespace: argocd
+spec:
+  description: Project for hello-k8s example
+  destinations:
+  - namespace: argocd-apps
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - '*'

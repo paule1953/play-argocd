@@ -8,7 +8,7 @@ spec:
     namespace: argocd-apps
     server: 'https://kubernetes.default.svc'
   source:
-    path: /gitops/hello-k8s/
+    path: gitops/hello-k8s/
     repoURL: 'https://github.com/paule1953/play-argocd.git'
     targetRevision: HEAD
     directory:

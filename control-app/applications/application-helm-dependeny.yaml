@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-dependency
+spec:
+  destination:
+    name: ''
+    namespace: argocd-apps
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: gitops/helm-dependency/
+    repoURL: 'https://github.com/paule1953/play-argocd.git'
+    targetRevision: HEAD
+    directory:
+      recurse: true
+  project: helm-dependency
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

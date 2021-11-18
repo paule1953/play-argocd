@@ -14,3 +14,7 @@ spec:
     directory:
       recurse: true
   project: hello-k8s
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -1,9 +1,3 @@
 apiVersion: v2
-appVersion: "1.0"
-description: A Helm chart for our dependencies
-name: helm-dependencies
-version: 1.0.0
-dependencies:
-- name: oauth2-proxy 
-  version: "4.2.2"
-  repository: "https://oauth2-proxy.github.io/manifests"
+version: 7.1.6
+name: nginx01~

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: jenkins-with-helm-repo
+  name: jenkins-with-helm-repo-from-git
 spec:
   destination:
     name: ''

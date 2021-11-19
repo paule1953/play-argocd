@@ -14,7 +14,7 @@ spec:
     directory:
       recurse: true
     helm:
-      version: v3
+      version: v2
   project: helm-dependency
   syncPolicy:
     automated:

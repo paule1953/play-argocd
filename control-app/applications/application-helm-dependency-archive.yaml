@@ -8,7 +8,7 @@ spec:
     namespace: argocd-apps
     server: 'https://kubernetes.default.svc'
   source:
-    path: gitops/helm-archive/oauth2-proxy-4.2.2.tgz
+    path: gitops/helm-archive/
     repoURL: 'https://github.com/paule1953/play-argocd.git'
     helm:
       version: v3

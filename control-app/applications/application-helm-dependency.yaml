@@ -8,13 +8,11 @@ spec:
     namespace: argocd-apps
     server: 'https://kubernetes.default.svc'
   source:
-    path: helm-dependency/Chart.yaml
+    path: helm-dependency
     repoURL: 'https://github.com/argoproj/argocd-example-apps.git'
     targetRevision: HEAD
     directory:
       recurse: true
-    helm:
-      version: v2
   project: helm-dependency
   syncPolicy:
     automated:

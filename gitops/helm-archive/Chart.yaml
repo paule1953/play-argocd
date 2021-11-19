@@ -4,6 +4,10 @@ description: A Helm chart for our dependencies
 name: helm-dependencies
 version: 1.0.0
 dependencies:
+- name: rabbitmq
+  version: "8.21.0"
+  repository: "https://charts.bitnami.com/bitnami"
+  condition: rabbitmq.enabled
 - name: oauth2-proxy 
   version: "4.2.2"
   repository: "https://oauth2-proxy.github.io/manifests"

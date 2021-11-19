@@ -11,8 +11,6 @@ spec:
     path: gitops/helm-archive/oauth2-proxy-4.2.2.tgz
     repoURL: 'https://github.com/paule1953/play-argocd.git'
     targetRevision: HEAD
-    directory:
-      recurse: true
     helm:
       version: v3
   project: helm-dependency

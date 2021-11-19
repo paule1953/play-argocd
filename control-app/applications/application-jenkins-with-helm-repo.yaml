@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: jenkins-with-helm-repo
+spec:
+  destination:
+    name: ''
+    namespace: argocd-apps
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: ''
+    repoURL: 'https://charts.jenkins.io'
+    targetRevision: 3.8.7
+    chart: jenkins
+    helm:
+      version: v3
+  project: helm-dependency
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

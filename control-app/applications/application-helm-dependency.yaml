@@ -11,10 +11,4 @@ spec:
     path: helm-dependency
     repoURL: 'https://github.com/argoproj/argocd-example-apps.git'
     targetRevision: HEAD
-    directory:
-      recurse: true
   project: helm-dependency
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true

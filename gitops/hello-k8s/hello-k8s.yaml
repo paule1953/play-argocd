@@ -11,7 +11,7 @@ spec:
     app: hello-kubernetes
 ---
 apiVersion: apps/v1
-kind: Deployment (z)
+kind: Deployment
 metadata:
   name: hello-kubernetes
 spec:

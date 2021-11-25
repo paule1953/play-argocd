@@ -10,7 +10,6 @@ spec:
   source:
     path: ./
     repoURL: 'http://40.91.83.114/scm/repo/exercises/broken-application'
-    targetRevision: HEAD
     directory:
       recurse: true
   project: hello-k8s
